@@ -1,0 +1,220 @@
+
+.stock{
+    background-image: url('../images/img1.webp');
+    width: 100%;
+    height: 70vh;
+    background-repeat: repeat;
+    background-size: cover;
+    margin-top: 10px;
+}
+.filter{
+    text-align: center;
+    margin-top: 60px;
+}
+.filter h4{
+    margin-top: 20px;
+}
+.filter .row{
+     width: 100%;
+     /* gap: 20px; */
+     margin-top: 40px;
+}
+@media (max-width:1300px){
+     .col-lg-6 {
+        display:none;
+    }
+}
+.card img{
+    width: 350px;
+    height: 40vh;
+    padding-left: 20px;   
+}
+.filter .card{
+    border: none;
+}
+span{
+    color:rgb(218 7 92);
+}
+.filter button{
+width: 100px;
+margin-left: 720px;
+height: 7vh;
+border-radius: 10px;
+background-color: rgb(238, 6, 45);
+/* border: 2px solid; */
+color: antiquewhite;
+margin-top: 20px;
+
+}
+.filter button:hover{
+    border: 2px solid rgb(220, 4, 4);
+}
+.over h2{
+ text-align: center;
+ margin-top: 100px;
+ font-weight: bold;
+}
+.over .row{
+   margin-left: 250px;
+   margin-top: 20px;
+   gap: 10px;
+   color: aliceblue;
+
+}
+.row .pc-1{
+    background-image: url('../images/p1.webp');
+    height: 40vh;
+    width:320px;
+    border-radius: 10px;
+}
+.pc-1 button{
+    margin-left: 100px;
+    height: 5vh;
+    border-radius: 10px;
+    width:90px;
+    background-color: rgb(237, 20, 20);
+    color: antiquewhite;
+    border-style: none;
+}
+.pc-1 button:hover{
+     border: 2px solid rgb(243, 79, 79);
+    
+}
+.row .pc-1:hover{
+    overflow: hidden;
+}
+.row .pc-2{
+    background-image: url('../images/p2.webp');
+    height: 40vh;
+    background-repeat: no-repeat;
+    width:320px;
+    border-radius: 10px;
+}
+
+.pc-2 button{
+    margin-left: 100px;
+    height: 5vh;
+    border-radius: 10px;
+    width:90px;
+    background-color: rgb(237, 20, 20);
+    color: antiquewhite;
+    border-style: none;
+}
+.pc-2 button:hover{
+     border: 2px solid rgb(243, 79, 79);
+    
+}
+.row .pc-3{
+    background-image: url('../images/p3.webp');
+    height: 40vh;
+    background-repeat: no-repeat;
+    width:320px;
+    border-radius: 10px;
+}
+
+.pc-3 button{
+    margin-left: 100px;
+    height: 5vh;
+    border-radius: 10px;
+    width:90px;
+    background-color: rgb(237, 20, 20);
+    color: antiquewhite;
+    border-style: none;
+}
+.pc-3 button:hover{
+     border: 2px solid rgb(243, 79, 79);
+    
+}
+
+.row .pc-4{
+    background-image: url('../images/p4.webp');
+    height: 40vh;
+    background-repeat: no-repeat;
+    width:320px;
+    border-radius: 10px;
+}
+
+.pc-4 button{
+    margin-left: 100px;
+    height: 5vh;
+    border-radius: 10px;
+    width:90px;
+    background-color: rgb(237, 20, 20);
+    color: antiquewhite;
+    border-style: none;
+}
+.pc-4 button:hover{
+     border: 2px solid rgb(243, 79, 79);
+    
+}
+.row .pc-5{
+    background-image: url('../images/p5.webp');
+    height: 40vh;
+    background-repeat: no-repeat;
+    width:320px;
+    border-radius: 10px;
+}
+
+.pc-5 button{
+    margin-left: 100px;
+    height: 5vh;
+    border-radius: 10px;
+    width:90px;
+    background-color: rgb(237, 20, 20);
+    color: antiquewhite;
+    border-style: none;
+}
+.pc-5 button:hover{
+     border: 2px solid rgb(243, 79, 79);
+    
+}
+.row .pc-6{
+    background-image: url('../images/p6.webp');
+    height: 40vh;
+    background-repeat: no-repeat;
+    width:320px;
+    border-radius: 10px;
+}
+
+.pc-6 button{
+    margin-left: 100px;
+    height: 5vh;
+    border-radius: 10px;
+    width:90px;
+    background-color: rgb(237, 20, 20);
+    color: antiquewhite;
+    border-style: none;
+}
+.pc-6 button:hover{
+     border: 2px solid rgb(243, 79, 79);
+    
+}
+ .jii{
+    overflow: hidden;
+ }
+.qwerty h2{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 100px;
+}
+.qwerty .card a{
+    text-decoration: none;
+    color: black;
+}
+.qwerty .card h5{
+    font-weight: bold;
+}
+.qwerty button{
+    width: 100px;
+    margin-left: 720px;
+    height: 7vh;
+    border-radius: 10px;
+    background-color: rgb(238, 6, 45);
+    /* border: 2px solid; */
+    color: antiquewhite;
+    margin-top: 40px;
+    
+    }
+    .qwerty button:hover{
+        border: 2px solid rgb(220, 4, 4);
+    }

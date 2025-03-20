@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    width: 100%;
+margin-top: 10px;
+
+  
+}
+.col-lg-3 img{
+    width: 80px;
+    height: 8vh;
+   margin-left:150px;
+}
+.col-lg-6 li{
+    list-style-type: none;
+    display: inline;
+  padding: 10px;
+} 
+.col-lg-6 ul{
+      margin-top: 20px; 
+}
+.col-lg-3 i{
+     margin-top: 20px;
+    padding-left: 30px;
+    margin-left: 40px;
+}
+.col-lg-6 a{
+  text-decoration: none;
+  color: black;
+}
+ .col-lg-3 a{
+color: black;
+/* text-decoration: none; */
+} 
+.mey{
+  position: relative;
+  top: -15px;
+  left: -10px;
+  font-size: 8px;
+ 
+ 
+}
+.mey li{
+  position: absolute;
+}
