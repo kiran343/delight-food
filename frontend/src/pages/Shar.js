@@ -27,7 +27,7 @@ const Shar = () => {
                 <img src={item.img} class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">{item.title}</h5>
-                  <a href="">{item.price} </a>
+                  <a href="">₹{item.price}.00 </a>
                   {cartProducts.find((Items)=> Items.id === item.id) ?(
                       <button class="btn btn-dark"onClick={()=>deleteCart(item)}>deleteCart</button>):(
                         <button class="btn btn-danger" onClick={()=>addCart(item)}>addCart</button>

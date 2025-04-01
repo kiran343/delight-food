@@ -13,56 +13,57 @@ const Masalas2 = [
             id:9,
             img:my1,
             title:"Rajma Masala",
-            price:"Rs.320.00",
-    
+            price:320,
+            quantity:1,
         },
         {
             id:10,
             img:my2,
             title:"Mughlai Chicken Masala",
-            price:"Rs.350.00",
-    
+            price:350,
+            quantity:1,
         },
         {
             id:11,
             img:my3,
             title:"Shale Panneer Masala",
-            price:"Rs.100.00",
-    
+            price:100,
+            quantity:1,
         },
         {
             id:12,
             img:my4,
             title:"Shele Briyani Masala",
-            price:"Rs.450.00",
-    
+            price:450,
+            quantity:1,
         },
         {
             id:13,
             img:my5,
             title:"Mutton Rogan Josh Masala",
-            price:"Rs.300.00",
-    
+            price:300,
+            quantity:1,
         },
         {
             id:14,
             img:my6,
             title:"Shahi Garram Masala 100g",
-            price:"Rs.450.00",
+            price:450,
+            quantity:1,
         },
         {
             id:15,
             img:my7,
             title:"Amritsari Chaat& Fruit Masala",
-            price:"Rs.460.00",
-    
+            price:460,
+            quantity:1,
         },
         {
             id:16,
             img:my8,
             title:"Dal Makhani Masala",
-            price:"Rs.240.00",
-    
+            price:240,
+            quantity:1,
         },
     
 ]

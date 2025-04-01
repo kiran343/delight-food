@@ -38,7 +38,6 @@ function App() {
        <Route path='/Rice' element={<Rice/>}/>
        <Route path='/shar' element={<Shar/>}/>
        <Route path='/cart' element={<Cart/>}/>
-       
       </Routes>
   
    <Footer/>

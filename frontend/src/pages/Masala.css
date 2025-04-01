@@ -65,7 +65,7 @@ font-weight: bold;
 }
 .simple button:hover{
     border: 3px solid rgb(247, 147, 147);
-    background-color: pink;
+     /* background-color: pink; */
 }
 .simple .btn1{
     background-color: rgb(237, 28, 63);

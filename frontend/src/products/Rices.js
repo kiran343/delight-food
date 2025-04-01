@@ -11,49 +11,50 @@ const Rices = [
             id:48,
             img:r1,
             title:"Chana Jor Garam 200g",
-            price:"Rs.320.00",
-    
+            price:320,
+            quantity:1,
         },
         {
             id:49,
             img:r2,
             title:"Chotta Samosa 250g",
-            price:"Rs.350.00",
-    
+            price:350,
+            quantity:1,
         },
         {
             id:50,
             img:r3,
             title:"Cuttact Mixture 200g",
-            price:"Rs.100.00",
-    
+            price:100,
+            quantity:1,
         },
         {
             id:51,
             img:r4,
             title:"Diet Soya Sticks",
-            price:"Rs.450.00",
-    
+            price:450,
+            quantity:1,
         },
         {
             id:52,
             img:r5,
             title:"CockTail Masala 240g",
-            price:"Rs.300.00",
-    
+            price:300,
+            quantity:1,
         },
         {
             id:53,
             img:r6,
             title:"Masala nut 250g",
-            price:"Rs.450.00",
+            price:450,
+            quantity:1,
         },
         {
             id:54,
             img:r7,
             title:"Roga Masala Mixture 300g",
-            price:"Rs.460.00",
-    
+            price:460,
+            quantity:1,
         },
         
 ]

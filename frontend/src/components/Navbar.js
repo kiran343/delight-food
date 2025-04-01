@@ -24,11 +24,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div class="col-lg-3">
+        <i class="fa-solid fa-house"></i>
           <i class="fa-solid fa-magnifying-glass"></i>
-          <i class="fa-solid fa-right-to-bracket"></i>
+          <i class="fa-solid fa-users"></i>
           <Link to="/cart"><i class="fa-solid fa-cart-shopping">
             {cartProducts.length? <span class="mey">{cartProducts.length}</span>:""}
-            
             </i></Link>
 
           

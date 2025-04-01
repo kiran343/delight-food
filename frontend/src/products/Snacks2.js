@@ -13,56 +13,57 @@ const Snacks2 = [
             id:66,
             img:d1,
             title:"Chana Jor Garam 200g",
-            price:"Rs.320.00",
-    
+            price:320,
+            quantity:1,
         },
         {
             id:67,
             img:d2,
             title:"Chotta Samosa 250g",
-            price:"Rs.350.00",
-    
+            price:350,
+            quantity:1,
         },
         {
             id:68,
             img:d3,
             title:"Cuttact Mixture 200g",
-            price:"Rs.100.00",
-    
+            price:100,
+            quantity:1,
         },
         {
             id:69,
             img:d4,
             title:"Diet Soya Sticks",
-            price:"Rs.450.00",
-    
+            price:450,
+            quantity:1,
         },
         {
             id:70,
             img:d5,
             title:"CockTail Masala 240g",
-            price:"Rs.300.00",
-    
+            price:300,
+            quantity:1,
         },
         {
             id:71,
             img:d6,
             title:"Masala nut 250g",
-            price:"Rs.450.00",
+            price:450,
+            quantity:1,
         },
         {
             id:72,
             img:d7,
             title:"Roga Masala Mixture 300g",
-            price:"Rs.460.00",
-    
+            price:460,
+            quantity:1,
         },
         {
             id:73,
             img:d8,
             title:"Pepper Banana Chips",
-            price:"Rs.240.00",
-    
+            price:240,
+            quantity:1,
         },
 ]
 

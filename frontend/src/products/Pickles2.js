@@ -13,56 +13,57 @@ const Pickles2 = [
                 id:40,
                 img:py1,
                 title:"Rajma Masala",
-                price:"Rs.320.00",
-        
+                price:320,
+                quantity:1,
             },
             {
                 id:41,
                 img:py2,
                 title:"Mughlai Chicken Masala",
-                price:"Rs.350.00",
-        
+                price:350,
+                quantity:1,
             },
             {
                 id:42,
                 img:py3,
                 title:"Shale Panneer Masala",
-                price:"Rs.100.00",
-        
+                price:100,
+                quantity:1,
             },
             {
                 id:43,
                 img:py4,
                 title:"Shele Briyani Masala",
-                price:"Rs.450.00",
-        
+                price:450,
+                quantity:1,
             },
             {
                 id:44,
                 img:py5,
                 title:"Mutton Rogan Josh Masala",
-                price:"Rs.300.00",
-        
+                price:300,
+                quantity:1,
             },
             {
                 id:45,
                 img:py6,
                 title:"Shahi Garram Masala 100g",
-                price:"Rs.450.00",
+                price:450,
+                quantity:1,
             },
             {
                 id:46,
                 img:py7,
                 title:"Amritsari Chaat& Fruit Masala",
-                price:"Rs.460.00",
-        
+                price:460,
+                quantity:1,
             },
             {
                 id:47,
                 img:py8,
                 title:"Dal Makhani Masala",
-                price:"Rs.240.00",
-        
+                price:240,
+                quantity:1,
             },
     
 ]

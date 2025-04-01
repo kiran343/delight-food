@@ -7,22 +7,22 @@ const Shars = [
                 id:55,
                 img:sh1,
                 title:"Rajma Masala",
-                price:"Rs.320.00",
-        
+                price:320,
+                quantity:1,
             },
             {
                 id:56,
                 img:sh2,
                 title:"Mughlai Chicken Masala",
-                price:"Rs.350.00",
-        
+                price:350,
+                quantity:1,
             },
             {
                 id:57,
                 img:sh3,
                 title:"Shale Panneer Masala",
-                price:"Rs.100.00",
-        
+                price:100,
+                quantity:1,
             },
 ]
 
