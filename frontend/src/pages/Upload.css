@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card-body h2{
+    margin-top: 10px;
+
+}
+.upload0 input{
+    margin-top: 20px;
+    margin-left: 23px;
+ }
+
+.upload1 input{
+   margin-top: 10px;
+   margin-left: 29px;
+}
+.upload2 input{
+    margin-top: 10px;
+    margin-left: 32px;
+ }
+ .upload3 input{
+    margin-top: 10px;
+    margin-left: 22px;
+ }
+ .upload4 input{
+    margin-top: 10px;
+    margin-left: 24px;
+ }
+ .upload9 button{
+    margin-top: 20px;
+    /* margin-left: 120px; */
+ }
+
+
