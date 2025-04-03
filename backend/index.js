@@ -7,7 +7,7 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("hello world");
 });
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion,ObjectId } = require('mongodb');
 const uri = "mongodb+srv://kirankumar64397:kiran123@cluster0.vyyhhtq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -20,41 +20,42 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
+    //  const product=client.db("pinny") .collection ("") 
     await client.connect();
-    const foodcollection = client.db("demo").collection("ship");
+     const connect = client.db("demo").collection("pinny");
     app.post("/upload", async (req, res) => {
       const data = req.body;
-      const result = await foodcollection.insertOne(data);
+      const result = await connect.insertOne(data);
       res.send(result);
     });
-    app.get("/foods", async (req, res) => {
-      const foods = foodcollection.find();
-      const result = await foods.toArray();
+    app.get("/get", async (req, res) => {
+      const products =await connect.find();
+      const result = await products.toArray();
       res.send(result);
     });
     app.get("/fooding/:id", async (req, res) => {
       const id = req.params.id;
-      const filter = { id: new ObjectId(id) };
-      const result = await foodcollection.findOne(filter);
+      const filter = { _id: new ObjectId(id) };
+      const result = await connect.findOne(filter);
       res.send(result);
     });
     app.patch("/allproducts/:id", async (req, res) => {
       const id = req.params.id;
       const updatefooddata = req.body;
-      const filter = { id: new ObjectId(id) };
+      const filter = { _id: new ObjectId(id) };
       const updatedoc = {
         $set: {
           ...updatefooddata,
         },
       };
       const options = { upsert: true };
-      const result = await foodcollections.updateOne(filter, updatedoc, options);
+      const result = await connect.updateOne(filter, updatedoc, options);
       res.send(result);
     })
-    app.delete("/food/id", async (req, res) => {
+    app.delete("/food/:id", async (req, res) => {
       const id = req.params.id;
-      const filter = { id: new ObjectId(id) };
-      const result = await foodcollections.deleteOne(filter);
+      const filter = { _id: new ObjectId(id) };
+      const result = await connect.deleteOne(filter);
       res
         .status(200)
         .json({ success: true, message: "data delete successfully" });
@@ -64,7 +65,7 @@ async function run() {
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
   } finally {
     // Ensures that the client will close when you finish/error
-    await client.close();
+    // await client.close();
   }
 }
 run().catch(console.dir);

@@ -4,25 +4,25 @@ import './Upload.css'
 
 const Upload = () => {
   const handleSubmit = (event) => {
-    event.presentDefault();
-    const from = event.target;
-    const tittle = from.tittle.value;
-    const img = from.img.vale;
-    const des = from.des.value;
-    const price = from.price.value;
-    const food = from.food.value;
-    const quantity = 1;
+    event.preventDefault();
+    const form =event.target;
+    const firstname = form.firstname.value;
+    const lastname = form.lastname.value;
+    const email = form.email.value;
+    const password = form.password.value;
+    const address = form.address.value;
+
     if (
-      tittle === "" ||
-      img === "" ||
-      price === "" ||
-      des === "" ||
-      food === "" ||
-      quantity === ""
+      firstname === "" ||
+      lastname === "" ||
+      email === "" ||
+      password === "" ||
+      address === "" 
     ) {
       toast.warn("fill the required fields");
+      console.log("fill the required fields")
     }
-    const foodObj = { tittle, img, price, des, food, quantity };
+    const foodObj = {firstname,lastname, email,password,address};
     console. log(foodObj);
     fetch("http://localhost:5002/upload", {
       method: "POST",
@@ -34,8 +34,8 @@ const Upload = () => {
       .then((res) => res.json())
       .then((data) => {
         toast.success("data added successfully");
-        from.reset();
-        window.location.href = "/admain";
+        form.reset();
+         window.location.href = "/update";
       });
   };
   return (
@@ -43,32 +43,33 @@ const Upload = () => {
       <ToastContainer />
       <div class="card upload6">
         <div class="card-body upload5">
-          <from on submit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
             <h2>UPLOAD</h2>
             <div class="upload0">
-              <label value="tittle">tittle :</label>
-              <input type="text" name="tittle"/>
+              <label value="firstname">firstname :</label><br/>
+              <input type="text" name="firstname"/>
               <div class="upload1">
-                <label value="img">Img :</label>
-                <input type="text" name="img" />
+                <label value="lastname">lastname :</label><br/>
+                <input type="text" name="lastname" />
               </div>
               <div class="upload2">
-                <label value="des">des :</label>
-                <input type="text" name="des"/>
+                <label value="email">email :</label><br/>
+                <input type="email" name="email"/>
               </div>
               <div class="upload3">
-                <label value="price">price :</label>
-                <input type="text" name="price"/>
+                <label value="password">password  :</label><br/>
+                <input type="password" name="password"/>
               </div>
-              <div class="upload4">
-                <label value="food">food :</label>
-                <input type="text" name="food"/>
+              <div class="upload3">
+                <label value="address">address :</label><br/>
+                <input type="text" name="address"/>
               </div>
+
             <div class="upload9">
                 <button type="submit" class="btn btn-dark">upload</button>
             </div>
             </div>
-          </from>
+          </form>
         </div>
       </div>
     </div>

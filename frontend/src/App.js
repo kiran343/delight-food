@@ -17,6 +17,7 @@ import Rice from './pages/Rice';
 import Shar from './pages/Shar';
 import Cart from './pages/Cart';
 import Upload from './pages/Upload';
+import Update from './pages/Update';
 
 
 
@@ -40,6 +41,7 @@ function App() {
        <Route path='/shar' element={<Shar/>}/>
        <Route path='/cart' element={<Cart/>}/>
        <Route path='/upload' element={<Upload/>}/>
+       <Route path='/update' element={<Update/>}/>
       </Routes>
   
    <Footer/>
