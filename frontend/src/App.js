@@ -18,6 +18,7 @@ import Shar from './pages/Shar';
 import Cart from './pages/Cart';
 import Upload from './pages/Upload';
 import Update from './pages/Update';
+import Edit from './pages/Edit';
 
 
 
@@ -42,6 +43,8 @@ function App() {
        <Route path='/cart' element={<Cart/>}/>
        <Route path='/upload' element={<Upload/>}/>
        <Route path='/update' element={<Update/>}/>
+       <Route path='/edit/:id' element={<Edit/>} leader={({params})=>
+        fetch(`http/localhost:3000/allproducts/${params.id}`)}/> 
       </Routes>
   
    <Footer/>

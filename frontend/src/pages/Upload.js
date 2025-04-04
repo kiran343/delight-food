@@ -1,11 +1,11 @@
 import React from "react";
 import { toast, ToastContainer } from "react-toastify";
-import './Upload.css'
+import "./Upload.css";
 
 const Upload = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
-    const form =event.target;
+    const form = event.target;
     const title = form.title.value;
     const img = form.img.value;
     const des = form.des.value;
@@ -17,13 +17,13 @@ const Upload = () => {
       img === "" ||
       des === "" ||
       price === "" ||
-      foodtype === "" 
+      foodtype === ""
     ) {
       toast.warn("fill the required fields");
-      console.log("fill the required fields")
+      console.log("fill the required fields");
     }
-    const foodObj = {title,img,des,price,foodtype};
-    console. log(foodObj);
+    const foodObj = { title, img, des, price, foodtype };
+    console.log(foodObj);
     fetch("http://localhost:5002/upload", {
       method: "POST",
       headers: {
@@ -35,7 +35,7 @@ const Upload = () => {
       .then((data) => {
         toast.success("data added successfully");
         form.reset();
-         window.location.href = "/update";
+        window.location.href = "/update";
       });
   };
   return (
@@ -46,29 +46,35 @@ const Upload = () => {
           <form onSubmit={handleSubmit}>
             <h2>UPLOAD</h2>
             <div class="upload0">
-              <label value="title">title :</label><br/>
-              <input type="text" name="title"/>
+              <label value="title">Title</label>
+              <br />
+              <input type="text" name="title" />
               <div class="upload1">
-                <label value="img">img :</label><br/>
+                <label value="img">Images</label>
+                <br />
                 <input type="text" name="img" />
               </div>
               <div class="upload2">
-                <label value="des">des :</label><br/>
-                <input type="text" name="des"/>
+                <label value="des">Description </label>
+                <br />
+                <input type="text" name="des" />
               </div>
               <div class="upload3">
-                <label value="price">price  :</label><br/>
-                <input type="text" name="price"/>
+                <label value="price">Price </label>
+                <br />
+                <input type="text"placeholder="price" name="price" />
               </div>
               <div class="upload4">
-                <label value="foodtype">foodtype  :</label><br/>
-                <input type="text" name="foodtype"/>
+                <label value="foodtype">Foodtype </label>
+                <br />
+                <input type="text"placeholder="foottype" name="foodtype" />
               </div>
-             
 
-            <div class="upload9">
-                <button type="submit" class="btn btn-dark">upload</button>
-            </div>
+              <div class="upload9">
+                <button type="submit" class="btn btn-dark">
+                  upload
+                </button>
+              </div>
             </div>
           </form>
         </div>
