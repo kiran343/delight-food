@@ -6,23 +6,23 @@ const Upload = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const form =event.target;
-    const firstname = form.firstname.value;
-    const lastname = form.lastname.value;
-    const email = form.email.value;
-    const password = form.password.value;
-    const address = form.address.value;
+    const title = form.title.value;
+    const img = form.img.value;
+    const des = form.des.value;
+    const price = form.price.value;
+    const foodtype = form.foodtype.value;
 
     if (
-      firstname === "" ||
-      lastname === "" ||
-      email === "" ||
-      password === "" ||
-      address === "" 
+      title === "" ||
+      img === "" ||
+      des === "" ||
+      price === "" ||
+      foodtype === "" 
     ) {
       toast.warn("fill the required fields");
       console.log("fill the required fields")
     }
-    const foodObj = {firstname,lastname, email,password,address};
+    const foodObj = {title,img,des,price,foodtype};
     console. log(foodObj);
     fetch("http://localhost:5002/upload", {
       method: "POST",
@@ -46,24 +46,25 @@ const Upload = () => {
           <form onSubmit={handleSubmit}>
             <h2>UPLOAD</h2>
             <div class="upload0">
-              <label value="firstname">firstname :</label><br/>
-              <input type="text" name="firstname"/>
+              <label value="title">title :</label><br/>
+              <input type="text" name="title"/>
               <div class="upload1">
-                <label value="lastname">lastname :</label><br/>
-                <input type="text" name="lastname" />
+                <label value="img">img :</label><br/>
+                <input type="text" name="img" />
               </div>
               <div class="upload2">
-                <label value="email">email :</label><br/>
-                <input type="email" name="email"/>
+                <label value="des">des :</label><br/>
+                <input type="text" name="des"/>
               </div>
               <div class="upload3">
-                <label value="password">password  :</label><br/>
-                <input type="password" name="password"/>
+                <label value="price">price  :</label><br/>
+                <input type="text" name="price"/>
               </div>
-              <div class="upload3">
-                <label value="address">address :</label><br/>
-                <input type="text" name="address"/>
+              <div class="upload4">
+                <label value="foodtype">foodtype  :</label><br/>
+                <input type="text" name="foodtype"/>
               </div>
+             
 
             <div class="upload9">
                 <button type="submit" class="btn btn-dark">upload</button>

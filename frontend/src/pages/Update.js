@@ -32,20 +32,20 @@ const Update = () => {
             <table className='table1'>
 
                     <tr>
-                        <th>firstname</th>
-                        <th>lastname</th>
-                        <th>email</th>
-                        <th>password</th>
-                        <th>address</th>
+                        <th>tittle</th>
+                        <th>img</th>
+                        <th>des</th>
+                        <th>price</th>
+                        <th>foodtype</th>
                         
                     </tr>
                     {productItems.map((item)=>(
                     <tr key={item._id}>
-                        <td>{item.firstname}</td>
-                        <td>{item.lastname}</td>
-                        <td>{item.email}</td>
-                        <td>{item.password}</td>
-                        <td>{item.address}</td>
+                         <td>{item.title}</td>
+                        <td><img src={item.img}style={{width:'50px',height:'10vh'}}/></td>
+                        <td>{item.des}</td>
+                        <td>{item.price}</td>
+                        <td>{item.foodtype}</td>
                         
 
                         <td><button className='table3' placeholder='delete'onClick={()=> DeleteItems(item._id)}> Delete </button></td>
