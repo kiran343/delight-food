@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Form, Route, Routes } from 'react-router-dom';
 import Sweet from './pages/Sweet';
 import Snack from './pages/Snack';
 import Snack2 from './pages/Snack2';
@@ -44,7 +44,8 @@ function App() {
        <Route path='/upload' element={<Upload/>}/>
        <Route path='/update' element={<Update/>}/>
        <Route path='/edit/:id' element={<Edit/>} leader={({params})=>
-        fetch(`http/localhost:3000/allproducts/${params.id}`)}/> 
+         fetch(`http/localhost:3000/allproducts/${params.id}`)}/> 
+         <Route path='/form' element={<Form/>}/>
       </Routes>
   
    <Footer/>

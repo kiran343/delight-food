@@ -1,5 +1,5 @@
 import React, { use, useEffect, useState } from "react";
-import { data, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import "./Update.css";
 
@@ -19,8 +19,7 @@ const Update = () => {
       .then((res) => res.json())
       .then((data) => {
         toast.error("deleted successfully");
-        setProductsItems((prevProductItems) =>
-          prevProductItems.filter((Item) => Item._id !== id)
+        setProductsItems((prevProductItems) =>prevProductItems.filter((Item) => Item._id !== id)
         );
       });
   };
@@ -41,17 +40,13 @@ const Update = () => {
             {productItems.map((item) => (
               <tr key={item._id}>
                 <td>{item.title}</td>
-                <td>
-                  <img
-                    src={item.img}
-                    style={{ width: "50px", height: "10vh", border: "0px" }}
-                  />
-                </td>
+                <td><img src={item.img}style={{ width: "50px", height: "10vh", border: "0px" }}/></td>
                 <td>{item.des}</td>
                 <td>{item.price}</td>
                 <td>{item.foodtype}</td>
 
                 <td className="w-25">
+                  
                   <button
                     className="table3"placeholder="delete"onClick={() => DeleteItems(item._id)}>Delete</button>
                   <Link to={`/edit/${item._id}`}><button className="ms-5 table4">Edit</button>

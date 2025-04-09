@@ -48,16 +48,16 @@ const Upload = () => {
             <div class="upload0">
               <label value="title">Title</label>
               <br />
-              <input type="text" name="title" />
+              <input type="text" placeholder="title"name="title" />
               <div class="upload1">
                 <label value="img">Images</label>
                 <br />
-                <input type="text" name="img" />
+                <input type="text"placeholder="url" name="img" />
               </div>
               <div class="upload2">
                 <label value="des">Description </label>
                 <br />
-                <input type="text" name="des" />
+                <input type="text"placeholder="description" name="des" />
               </div>
               <div class="upload3">
                 <label value="price">Price </label>

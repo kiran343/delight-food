@@ -48,6 +48,7 @@ margin-top: 20px;
 }
 .filter button:hover{
     border: 2px solid rgb(220, 4, 4);
+   
 }
 .over h2{
  text-align: center;
@@ -75,6 +76,7 @@ margin-top: 20px;
     background-color: rgb(237, 20, 20);
     color: antiquewhite;
     border-style: none;
+    border: 0;
 }
 .pc-1 button:hover{
      border: 2px solid rgb(243, 79, 79);
