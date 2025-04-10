@@ -4,6 +4,7 @@ import DF_logo from "../images/DF_logo.avif";
 import { Link } from "react-router-dom";
 import {useSelector} from 'react-redux'
 
+
 const Navbar = () => {
   const cartProducts=useSelector((item)=>item.cart.cartItems);
   return (
@@ -24,8 +25,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div class="col-lg-3">
-        <i class="fa-solid fa-house"></i>
+        <Link to="/forms"><i class="fa-solid fa-arrow-right-to-bracket"></i></Link>
           <i class="fa-solid fa-magnifying-glass"></i>
+
           <Link to="/upload"><i class="fa-solid fa-users"></i></Link>
 
           <Link to="/cart"><i class="fa-solid fa-cart-shopping">

@@ -15,8 +15,9 @@ const Mukhwas = () => {
       dispatch (deleteFromCart(item))
     }
   return (
+    
     <div>
-        <hr/>
+        
  <div class="lora">
         <section class="riza">
           <h1>Mukhwas</h1>

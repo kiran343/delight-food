@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.ads{
+    text-align: center;
+    margin-top: 50px;   
+    border: 1px solid;
+    height: 55vh;
+    width: 250px;
+   
+    margin-left: 40%;
+    border-radius: 20px;
+    
+}
+.ads button{
+    width: 90px;
+    height: 5vh;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color:black;
+    background-color: red;
+    border-radius: 5px;
+    border: 0;
+}
+.form1{
+    margin-top: 50px;
+}
+.form2{
+    margin-top: 20px;
+}
+.form3{
+    margin-top: 20px;
+}
