@@ -38,6 +38,7 @@ const Navbar = () => {
            
         </div>
       </section>
+      <hr/>
 
      
     </div>

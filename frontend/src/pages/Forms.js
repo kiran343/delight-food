@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import "./Forms.css";
+import { Link } from "react-router-dom";
 
 const Forms = () => {
+ 
   const [form, setFrom] = useState({
+    firstname:"",
+    lastname:"",
     username: "",
     email: "",
     password: "",
@@ -10,6 +14,8 @@ const Forms = () => {
   const [error, setError] = useState({});
   const validation = () => {
     const newError = {};
+    if (!form.firstname) newError.firstname = "*invalid firstname";
+    if (!form.lastname) newError.lastname = "*invalid lastname";
     if (!form.username) newError.username = "*invalid username";
     if (!form.email) newError.email = "*invalid email";
     if (!form.password) newError.password = "*invaild password";
@@ -28,9 +34,8 @@ const Forms = () => {
       }
     }
     return newError;
-  };
-
-  const handlechange = (event) => {
+};
+const handlechange = (event) => {
     const { name, value } = event.target;
     setFrom({
       ...form,
@@ -42,8 +47,10 @@ const Forms = () => {
     const validationerror = validation();
     if (Object.keys(validationerror).length === 0) {
       console.log("form valid", form);
-      window.location.href = "/sweet";
+      window.location.href = "/Login";
       setFrom({
+        firstname:"",
+        lastname:"",
         username: "",
         email: "",
         password: "",
@@ -53,44 +60,87 @@ const Forms = () => {
   };
   return (
     <div>
-      <div class="ads">
-        <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
+        <div class="ads">
+        <div className="form0">
+          <h2>Register From</h2>
+            <br/>
+            <label>firstname</label>
+            <br />
+            <input
+              type="text"
+              name="firstname"
+              placeholder="*firstname"
+              onChange={handlechange}
+              value={form.firstname}
+            />
+            {error.email && <p>{error.email}</p>}
+          </div>
           <div className="form1">
-            <label>Username</label>
+            <br/>
+            <label>lastname</label>
+            <br />
+            <input
+              type="text"
+              name="lastname"
+              placeholder="*lastname"
+              onChange={handlechange}
+              value={form.lastname}
+            />
+            {error.lastname && <p>{error.lastname}</p>}
+          </div>
+          <div className="form2">
+          
+            <br/>
+            <label>username</label>
             <br />
             <input
               type="text"
               name="username"
+              placeholder="*username"
               onChange={handlechange}
               value={form.username}
             />
             {error.username && <p>{error.username}</p>}
           </div>
-          <div className="form2">
+          <div className="form3">
+          
+            <br/>
             <label>Email</label>
             <br />
             <input
               type="text"
               name="email"
+              placeholder="*email"
               onChange={handlechange}
               value={form.email}
             />
             {error.email && <p>{error.email}</p>}
           </div>
-          <div className="form3">
+          <div className="form4">
+            <br/>
             <label>Password</label>
             <br />
             <input
-              type="text"
+              type="password"
               name="password"
+              placeholder="*password"
               onChange={handlechange}
               value={form.password}
             />
             {error.password && <p>{error.password}</p>}
           </div>
+         <p> Already have a account</p>
+         <Link to="/Login">Login</Link>
+          {/* <Link to="/"><button>Submit</button></Link> */}
+          <br/>
           <button>Submit</button>
+          
+
+          </div>
+          
         </form>
-      </div>
+      
     </div>
   );
 };

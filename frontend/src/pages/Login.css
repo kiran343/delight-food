@@ -3,11 +3,11 @@
     padding: 0;
    
   }
-  .ads {
+  .pinny {
     text-align: center;
     border: 1px solid;
     width: 100%;
-    height: 130vh;
+    height: 100vh;
     /* background-image: url('../images/book-with-green-board-background_1150-3837.avif');  */
     background-size: cover;
     border: 0;
@@ -16,19 +16,19 @@
     font-size: large;
   
   }
-  .form0 h2 {
-    padding-top: 20px;
+  .form5 h2 {
+    padding-top:120px;
     margin-bottom: 20px;
-    color:red;
+    color: red;
   
   }
-  .form0 input {
+  .form5 input {
     margin-top: 10px;
     width: 300px;
     height: 5vh;
     border: 1px solid;
     /* color: aliceblue; */
-    border-radius:40px;
+    border-radius:10px;
     padding-left: 20px;
     border-radius:10px;
     /* border-left: 0;
@@ -36,7 +36,7 @@
     background:none
   }
   
-  .form1 input {
+  .form6 input {
     margin-top: 10px;
     width: 300px;
     height: 5vh;
@@ -49,53 +49,7 @@
     background:none
   
   }
-    
-  .form2 input {
-    margin-top: 10px;
-    width: 300px;
-    height: 5vh;
-    border: 1px solid;
-    /* color: aliceblue; */
-    border-radius:10px;
-    padding-left: 20px;
-    /* border-left: 0;
-    border-right: 0; */
-    background:none
-  
-  }
-    
-  .form3 input {
-    margin-top: 10px;
-    width: 300px;
-    height: 5vh;
-    border: 1px solid;
-    /* color: aliceblue; */
-    border-radius:10px;
-    padding-left: 20px;
-    /* border-left: 0;
-    border-right: 0; */
-    background:none
-  
-  }
-    
-  .form4 input {
-    margin-top: 10px;
-    width: 300px;
-    height: 5vh;
-    border: 1px solid;
-    /* color: aliceblue; */
-    border-radius:10px;
-    padding-left: 20px;
-    /* border-left: 0;
-    border-right: 0; */
-    background:none
-  
-  }
-  
-  
-
-
-  .ads button{
+  .pinny button{
       margin-top: 20px;
       width: 150px;
       height: 5vh;
@@ -105,7 +59,7 @@
       color: aliceblue;
   
   }
-  .ads p{
+  .pinny p{
     font-size: medium;
     margin-top: 10px;
   }

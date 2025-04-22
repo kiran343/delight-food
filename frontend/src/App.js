@@ -20,6 +20,7 @@ import Upload from './pages/Upload';
 import Update from './pages/Update';
 import Edit from './pages/Edit';
 import Forms from './pages/Forms';
+import Login from './pages/Login';
 
 
 
@@ -48,7 +49,9 @@ function App() {
        <Route path='/edit/:id' element={<Edit/>} leader={({params})=>
          fetch(`http/localhost:3000/allproducts/${params.id}`)}/> 
   <Route path='/forms' element={<Forms/>}/>
+  <Route path='/login' element={<Login/>}/>
   <Route path='/sweet' element={<Sweet/>}/>
+
       </Routes>
   
    <Footer/>
